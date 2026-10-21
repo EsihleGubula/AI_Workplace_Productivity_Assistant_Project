@@ -9,6 +9,8 @@ export const Route = createFileRoute("/settings")({
       { name: "description", content: "Manage your profile and local app data." },
       { property: "og:title", content: "Settings — AI Workplace Assistant" },
       { property: "og:description", content: "Manage your profile and local app data." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
   }),
   component: SettingsPage,

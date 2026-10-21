@@ -12,6 +12,8 @@ export const Route = createFileRoute("/meeting-notes")({
       { name: "description", content: "Turn long meeting notes into key points, decisions, action items, owners and deadlines." },
       { property: "og:title", content: "AI Meeting Notes Summarizer" },
       { property: "og:description", content: "Key points, decisions and action items from your notes." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
   }),
   component: NotesPage,

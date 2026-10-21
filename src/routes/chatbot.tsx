@@ -13,6 +13,8 @@ export const Route = createFileRoute("/chatbot")({
       { name: "description", content: "Chat with an AI assistant about planning, writing and workplace tasks." },
       { property: "og:title", content: "AI Workplace Chatbot" },
       { property: "og:description", content: "Contextual AI help for everyday workplace tasks." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
   }),
   component: ChatPage,
