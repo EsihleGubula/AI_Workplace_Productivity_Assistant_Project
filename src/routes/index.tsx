@@ -10,6 +10,8 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Automate emails, meeting notes and workplace questions with AI." },
       { property: "og:title", content: "AI Workplace Productivity Assistant" },
       { property: "og:description", content: "Automate emails, meeting notes and workplace questions with AI." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
   }),
   component: Dashboard,
