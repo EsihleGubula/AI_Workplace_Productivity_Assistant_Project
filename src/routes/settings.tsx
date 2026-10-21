@@ -19,7 +19,7 @@ export const Route = createFileRoute("/settings")({
 function SettingsPage() {
   const [name, setName] = useState("");
   const [saved, setSaved] = useState(false);
-  useEffect(() => setName(localStorage.getItem("name") ?? ""), []);
+  useEffect(() => { setName(localStorage.getItem("name") ?? ""); }, []);
 
   return (
     <div className="mx-auto flex max-w-2xl flex-col gap-6">

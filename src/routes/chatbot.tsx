@@ -31,7 +31,9 @@ function ChatPage() {
   const [input, setInput] = useState("");
   const { run, loading, error } = useAI();
   const end = useRef<HTMLDivElement>(null);
-  useEffect(() => end.current?.scrollIntoView({ behavior: "smooth" }), [msgs, loading]);
+  useEffect(() => {
+    end.current?.scrollIntoView({ behavior: "smooth" });
+  }, [msgs, loading]);
 
   async function send(text: string) {
     if (!text.trim() || loading) return;
